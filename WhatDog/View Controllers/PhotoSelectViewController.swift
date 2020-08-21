@@ -29,11 +29,39 @@ class PhotoSelectViewController: UIViewController, UIImagePickerControllerDelega
         
         if let pickedImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
             
+            guard let ciImage = CIImage(image: pickedImage) else {
+                fatalError("cannot convert to CIImage")
+            }
+            
+            detect(image: ciImage)
+            
             imageView.image = pickedImage
             
         }
         
         imagePicker.dismiss(animated: true, completion: nil)
+        
+    }
+    
+    func detect(image: CIImage) {
+        
+        guard let model = try? VNCoreMLModel(for: DogClassifier().model) else {
+            fatalError("cannot import model")
+        }
+        
+        let request = VNCoreMLRequest(model: model) { (request, error) in
+            let classification = request.results?.first as? VNClassificationObservation
+            self.breedLabel.text = classification?.identifier
+            
+        }
+        
+        let handler = VNImageRequestHandler(ciImage: image)
+        
+        do {
+            try handler.perform([request])
+        } catch {
+            print("Error: \(error)")
+        }
         
     }
     
