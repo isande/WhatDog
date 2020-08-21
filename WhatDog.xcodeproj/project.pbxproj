@@ -13,7 +13,6 @@
 		F4A2F79424EF4B3900AF7BBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4A2F79324EF4B3900AF7BBC /* Assets.xcassets */; };
 		F4A2F79724EF4B3900AF7BBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4A2F79524EF4B3900AF7BBC /* LaunchScreen.storyboard */; };
 		F4A2F79F24EF4C3100AF7BBC /* PhotoSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A2F79E24EF4C3100AF7BBC /* PhotoSelectViewController.swift */; };
-		F4A2F7A124EF4C4700AF7BBC /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A2F7A024EF4C4700AF7BBC /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +24,6 @@
 		F4A2F79624EF4B3900AF7BBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4A2F79824EF4B3900AF7BBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4A2F79E24EF4C3100AF7BBC /* PhotoSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectViewController.swift; sourceTree = "<group>"; };
-		F4A2F7A024EF4C4700AF7BBC /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +69,6 @@
 		F4A2F7A224EF4C5600AF7BBC /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F4A2F7A024EF4C4700AF7BBC /* ResultViewController.swift */,
 				F4A2F79E24EF4C3100AF7BBC /* PhotoSelectViewController.swift */,
 			);
 			path = "View Controllers";
@@ -160,7 +157,6 @@
 				F4A2F78B24EF4B3800AF7BBC /* AppDelegate.swift in Sources */,
 				F4A2F78D24EF4B3800AF7BBC /* SceneDelegate.swift in Sources */,
 				F4A2F79F24EF4C3100AF7BBC /* PhotoSelectViewController.swift in Sources */,
-				F4A2F7A124EF4C4700AF7BBC /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
